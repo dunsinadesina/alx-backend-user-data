@@ -78,8 +78,8 @@ class BasicAuth(Auth):
         User.load_from_file()
         count = User.count()
         if not count:
-            return nONE
-        USERS = user.search({'email': user_email})
+            return None
+        users = User.search({'email': user_email})
         if not users:
             return None
         user = users[0]
