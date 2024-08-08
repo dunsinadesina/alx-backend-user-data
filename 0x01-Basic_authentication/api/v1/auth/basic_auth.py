@@ -54,7 +54,7 @@ class BasicAuth(Auth):
         self, decoded_base64_authorization_header: str
     ) -> Tuple[str, str]:
         """doc string"""
-        if decoded_bases64_authorization_header is None:
+        if decoded_base64_authorization_header is None:
             return (None, None)
         if type(decoded_base64_authorization_header) != str:
             return (None, None)
