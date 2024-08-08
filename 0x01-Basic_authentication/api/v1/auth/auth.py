@@ -3,7 +3,7 @@
 Auth class is defined here
 """
 from flask import abort, request
-from typing import List, TyperVar
+from typing import List, TypeVar
 from models.user import User
 import re
 
