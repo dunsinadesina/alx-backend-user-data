@@ -91,7 +91,7 @@ class BasicAuth(Auth):
         """doc string"""
         auth_header = self.authorization_header(request)
         credential = self.extract_base64_authorization_header(auth_header)
-        plain_credential = self.decode_bases64_authorization_header(credential)
+        plain_credential = self.decode_base64_authorization_header(credential)
         email, passwd = self.extract_user_credentials(plain_credentials)
         user = self.user_object_from_credentials(email, passwd)
         print(user)
