@@ -40,7 +40,7 @@ class BasicAuth(Auth):
 
         try:
             res = base64.b64decode(
-                    bytes(baseb4_authorization_header, 'utf-8')
+                bytes(base64_authorization_header, 'utf-8')
             )
             res = res.decode('utf-8')
 
